@@ -17,3 +17,15 @@ This project implements a simple compiler that translates a subset of Java code 
 1. **Build the Compiler:**
    ```bash
    make
+
+   Compile a Java Program:
+
+Place your Java code in an input.java file.
+Run the compiler:
+```bash
+python3 main.py
+
+
+
+
+
