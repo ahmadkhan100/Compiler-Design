@@ -1,0 +1,9 @@
+all: compiler
+
+compiler: parser.y lexer.l main.py
+	bison -d parser.y
+	flex lexer.l
+	gcc parser.tab.c lex.yy.c -o compiler -lfl -ly
+
+clean:
+	rm -f compiler parser.tab.c parser.tab.h lex.yy.c output.asm output.o output
